@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-g" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VibeGen AI - AI Image Generator</title>
+    <meta name="description" content="Unleash your imagination with the boldest image AI. Generate stunning visuals from text or transform your own images.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              'brand-primary': '#007CF0',
+              'brand-primary-hover': '#0056b3',
+              'dark-bg': '#121212',
+              'dark-surface': '#1E1E1E',
+              'dark-text': '#E0E0E0',
+              'light-bg': '#F5F5F5',
+              'light-surface': '#FFFFFF',
+              'light-text': '#121212',
+            },
+            boxShadow: {
+              'glow-primary': '0 0 15px 5px rgba(0, 124, 240, 0.4)',
+              'glow-primary-hover': '0 0 25px 8px rgba(0, 124, 240, 0.5)',
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.11.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-light-bg dark:bg-dark-bg">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
